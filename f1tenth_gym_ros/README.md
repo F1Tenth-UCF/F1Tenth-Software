@@ -30,7 +30,7 @@ This installation guide will be split into instruction for installing the ROS 2 
   ```
 - Update correct parameter for path to map file:
   Go to `sim.yaml` [https://github.com/f1tenth/f1tenth_gym_ros/blob/main/config/sim.yaml](https://github.com/f1tenth/f1tenth_gym_ros/blob/main/config/sim.yaml) in your cloned repo, change the `map_path` parameter to point to the correct location. It should be `'<your_home_dir>/sim_ws/src/f1tenth_gym_ros/maps/levine'`
-- Install dependencies with rosdep:
+- Install dependencies with rosdep, Note: In order to correctly install you must run rosdep update --include-eol-distros:
   ```bash
   source /opt/ros/foxy/setup.bash
   cd ..
