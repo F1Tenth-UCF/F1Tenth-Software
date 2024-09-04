@@ -63,23 +63,6 @@ $ rocker --nvidia --x11 --volume .:/sim_ws/src/f1tenth_gym_ros -- f1tenth_gym_ro
 
 **Install the following dependencies:**
 
-If your system does not support nvidia-docker2, noVNC will have to be used to forward the display.
-- Again you'll need **Docker**. Follow the instruction from above.
-- Additionally you'll need **docker-compose**. Follow the instruction [here](https://docs.docker.com/compose/install/) to install docker-compose.
-
-**Installing the simulation:**
-
-1. Clone this repo 
-2. Bringup the novnc container and the sim container with docker-compose:
-```bash
-docker-compose up
-``` 
-3. In a separate terminal, run the following, and you'll have the a bash session in the simulation container. `tmux` is available for convenience.
-```bash
-docker exec -it f1tenth_gym_ros-sim-1 /bin/bash
-```
-4. In your browser, navigate to [http://localhost:8080/vnc.html](http://localhost:8080/vnc.html), you should see the noVNC logo with the connect button. Click the connect button to connect to the session.
-
 # Launching the Simulation
 
 1. `tmux` is included in the contianer, so you can create multiple bash sessions in the same terminal.
