@@ -60,8 +60,10 @@ $ rocker --nvidia --x11 --volume .:/sim_ws/src/f1tenth_gym_ros -- f1tenth_gym_ro
 ```
 
 ## Without an NVIDIA gpu:
-
-**Install the following dependencies:**
+1. Simply run
+$ source /opt/ros/foxy/setup.bash
+$ source install/local_setup.bash
+$ ros2 launch f1tenth_gym_ros gym_bridge_launch.py
 
 # Launching the Simulation
 
